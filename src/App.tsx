@@ -5,12 +5,12 @@ import Router from "./router";
 import store from "./store";
 
 const App: React.FC = () => {
-	return (
-		<Provider store={store}>
-			<BrowserRouter>
-				<Router />
-			</BrowserRouter>
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </Provider>
+  );
 };
 export default App;

@@ -7,32 +7,32 @@ import Forbidden from "../modules/Forbidden";
 import NotFound from "../modules/NotFound";
 
 const Router = () => {
-	return (
-		<Layout>
-			<Switch>
-				<Route exact path="/" component={Index} />
-				<Route
-					exact
-					path="/example/create"
-					render={props => <Example {...props} view="create" />}
-				/>
-				<Route
-					exact
-					path="/example/read"
-					render={props => <Example {...props} view="read" />}
-				/>
-				<Route
-					exact
-					path="/example/update"
-					render={props => <Example {...props} view="update" />}
-				/>
-				<Route exact path="/403" component={Forbidden} />
-				<Route component={NotFound} />
-			</Switch>
-		</Layout>
-	);
+  return (
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Index} />
+        <Route
+          exact
+          path="/example/create"
+          render={props => <Example {...props} view="create" />}
+        />
+        <Route
+          exact
+          path="/example/read"
+          render={props => <Example {...props} view="read" />}
+        />
+        <Route
+          exact
+          path="/example/update"
+          render={props => <Example {...props} view="update" />}
+        />
+        <Route exact path="/403" component={Forbidden} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  );
 };
 
-const Index = () => <h1>BKPI</h1>;
+const Index = () => <h1>ANTD REACT</h1>;
 
 export default Router;
