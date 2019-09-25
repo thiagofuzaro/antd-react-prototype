@@ -1,0 +1,12 @@
+{
+	"title": "Bkpi - teste em português",
+	"crud": {
+		"create": "Criar",
+		"read": "Ler",
+		"update": "Atualizar",
+		"delete": "Remover"
+	},
+	"language": {
+		"set": "Definir idioma"
+	}
+}
